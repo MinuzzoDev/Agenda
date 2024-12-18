@@ -1,0 +1,152 @@
+
+.navbar-brand img {                  /* classe navbar-brand e limitando a largura do logo para 50px */
+    width: 50px;
+} 
+
+
+#main-title {                        /* vamos reaproveitar de uma página para outra  */
+    text-align: center;              /* no centro */
+    margin: 15px 0 30px;             /* 15px em cima , zero , 30px embaixo */
+}
+
+
+/* HOME */
+
+#contacts-table {
+    max-width: 800px;               /* largura máxima de 800px */
+    margin: 0 auto;
+}
+
+
+#contacts-table thead {                     /* cabeçalho */
+    color: #FFF;                            /* cor de texto branca  */
+    background-color: #007BFF;              /* cor azul */
+}
+
+
+.col-id {
+    font-weight: bold;                     /* negrito */
+}
+
+.actions {                                  /* ações  */
+    text-align: right;                      /* tudo para direita */                 
+    width: 150px;                           /* largura de 150px */
+}
+
+
+.actions i {                                /* icones do action */
+    font-size: 18px;                        
+    margin-right: 5px;
+}
+
+
+.check-icon {                                /* cor do icone verde para o olho (como é uma fonte de icone eu posso mudar a cor dele como se fosse texto) */
+    color: #1E7E34 ;
+}
+
+
+.edit-icon {                                /* cor do icone lapis editar */
+    color: #007BFF;
+}
+
+.delete-btn {                               /* tirar o estilo quadrado do botão */
+    background-color: transparent;          /* cor de fundo transparente */
+    border: none;                           /* tirar a borda */
+    padding: 0;
+}
+
+
+.delete-icon {                              /* cor do icone deletar */
+    color: #BD2130;
+}
+
+
+#empty-list-text {                          /* texto alinhado ao centro quando a gente tem a tabela vazia */    
+    text-align: center;                    
+}
+
+
+#msg {                                     /* vamos estilizar a mensagem que só teremos na home */
+    color: #155724;                        /* fundo verde escuro */ 
+    background-color: #D4EDDA ;            /* fundo verde um pouco mais claro */ 
+    border: 1px solid #C3E6CB;             /* borda sólida de um verde um pouco mais escuro */
+    padding: 10px;                         /* em todos os lados */ 
+    text-align: center;                    /* texto alinhado ao centro */
+    max-width: 500px;                      /* largura máxima 500px  */
+    margin: 0 auto;
+    margin-top: 30px ;                     /* para afastar dos outros elementos */
+
+}
+
+
+
+/*  Css estilizado da página de consulta individual (visualizar contatos)  */
+
+#view-contact-container {
+    max-width: 500px;                      /* largura máxima de 500 px com margin 0 e auto : com isso centralizamos todo o conteúdo e se nas observações*/
+    margin: 0 auto;                        /* tivesse uma descrição muito grande ele iria ocupar a tela toda. Então limito para 500px para ele resumir e centralizar */
+}
+
+
+.bold {
+    font-weight: bold;                      /* os elementos que possuem a classe bold em negrito */
+}
+
+
+/* Para o botão (btn) voltar : */
+
+#back-link-container {
+    display: block;                       /* display de block, largura de 500px para o container do botão, margin de 30px pro topo, auto nas laterais e zero para baixo (espaçamento superior) */
+    width: 500px;
+    margin: 30px auto 0;
+}
+
+
+#back-link {
+    border: 1px solid #007BFF;            /* borda de 1px sólida na cor azul, cor dele também azul, borda de 4px para quebrar o raio do canto do elemento e 5px de espaçamento interno  */
+    color: #007BFF;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+
+#back-link:hover {                        
+    text-decoration: none;                 /* um hover para tirar o text-decoration (underline que fica embaixo do texto no html)  */
+}
+
+
+/* CREATE = css do criar dados */
+
+#create-form,
+#edit-form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+
+/* MOBILE (Vamos criar uma regra que será a única MOBILE neste nosso projeto agenda) */                 
+
+@media(max-width: 480px) {                                      /*  480px = menor que isso  */
+    
+    #home-link {                                               /*  vai aplicar uma regra no home-link de display = none  */
+    
+        display: none;
+    }
+}
+
+.delete-form {
+    display: inline-block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
